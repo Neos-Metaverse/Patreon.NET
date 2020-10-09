@@ -14,6 +14,33 @@ namespace Patreon.NET
 
         [JsonProperty(PropertyName = "id")]
         public string Id { get; set; }
+
+        [JsonProperty(PropertyName = "attributes")]
+        public RewardAttributes Attributes { get; set; }
+    }
+
+    public class RewardAttributes
+    {
+        [JsonProperty(PropertyName = "amount_cents")]
+        public int AmountCents { get; set; }
+
+        [JsonProperty(PropertyName = "description")]
+        public string Description { get; set; }
+
+        [JsonProperty(PropertyName = "patron_count")]
+        public int PatronCount { get; set; }
+
+        [JsonProperty(PropertyName = "user_limit")]
+        public int? UserLimit { get; set; }
+
+        [JsonProperty(PropertyName = "title")]
+        public string Title { get; set; }
+    }
+
+    public class RewardListData
+    {
+        [JsonProperty(PropertyName = "included")]
+        public List<Reward> Rewards { get; set; }
     }
 
     public class RewardData

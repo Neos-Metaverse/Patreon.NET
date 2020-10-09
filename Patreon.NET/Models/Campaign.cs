@@ -93,8 +93,8 @@ namespace Patreon.NET
         [JsonProperty(PropertyName = "rewards")]
         public List<Reward> Rewards { get; set; }
 
-        [JsonProperty(PropertyName = "goals")]
-        public List<Goal> Goals { get; set; }
+        //[JsonProperty(PropertyName = "goals")]
+        //public List<Goal> Goals { get; set; }
 
         [JsonProperty(PropertyName = "pledges")]
         public List<Pledge> Pledges { get; set; }
