@@ -8,12 +8,15 @@ namespace Testing
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            var patreon = new Patreon.NET.PatreonClient("ACCESS_TOKEN");
-            var pledges = patreon.GetCampaignPledges("CAMPAIGN_ID").Result;
+        const string CAMPAIGN_ID = "CAMPAIGN_ID";
+        const string ACCESS_TOKEN = "ACCESS_TOKEN";
 
-            //var result = task.Result;
+        static async Task Main(string[] args)
+        {
+            var patreon = new Patreon.NET.PatreonClient(ACCESS_TOKEN);
+            //var pledges = await patreon.GetCampaignPledges(CAMPAIGN_ID);
+            var members = await patreon.GetCampaignMembers(CAMPAIGN_ID);
+            //var campaign = await patreon.GetCampaign(CAMPAIGN_ID);
 
             Console.Read();
         }

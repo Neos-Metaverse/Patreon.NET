@@ -102,14 +102,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Containers\PledgeList.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Campaign.cs" />
-    <Compile Include="Models\Goal.cs" />
     <Compile Include="Models\Links.cs" />
-    <Compile Include="Models\Pledge.cs" />
-    <Compile Include="Models\PledgeListData.cs" />
-    <Compile Include="Models\Reward.cs" />
+    <Compile Include="Models\Member.cs" />
+    <Compile Include="Models\PledgeEvent.cs" />
+    <Compile Include="Models\Tier.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="PatreonClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
