@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace Patreon.NET
@@ -71,5 +67,8 @@ namespace Patreon.NET
 
         [JsonProperty(PropertyName = "vanity")]
         public string Vanity { get; set; }
+
+        [JsonProperty(PropertyName = "social_connections")]
+        public SocialConnections SocialConnections { get; set; }
     }
 }
