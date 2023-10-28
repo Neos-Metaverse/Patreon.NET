@@ -1,6 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <!-- NUGET META DATA -->
+  <PropertyGroup>
+    <Company>Yellow Dog Man Studios</Company>
+    <Authors>Yellow Dog Man Studios</Authors>
+    <PackageId>YellowDogMan.Patreon.NET</PackageId>
+    <Description>.Simple library for interacting with Patreon's API</Description>
+    <Copyright>Copyright (c) Yellow Dog Man Studios s.r.o. 2023</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Yellow-Dog-Man/Patreon.NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectURL>https://yellowdogman.com/</PackageProjectURL>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>patreon</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Images\icon.png" Pack="true" PackagePath="\"/>
+    <None Include="..\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
